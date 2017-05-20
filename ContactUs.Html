@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<title>Vozhi's Company</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- the Stylesheet I used is from w3schools , free to use and no license needed-->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<body>
+
+		<!-- Navbar (sit on top) -->
+		<div class="w3-top">
+		  <div class="w3-bar w3-white w3-wide w3-padding w3-card-2"><a href="#home" class="w3-bar-item w3-button"><strong>Vozhi</strong> LLC</a><!-- Float links to the right. Hide them on small screens -->
+			<div class="w3-right w3-hide-small">
+			  <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+			  <a href="#Videos" class="w3-bar-item w3-button">Videos</a>
+			  <a href="#about" class="w3-bar-item w3-button">About</a>
+			</div>
+		  </div>
+		</div>
+
+		<!-- Header -->
+		<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+		  <img class="w3-image" src="image/homePageBigPic.jpg" alt="Architecture" width="1500" height="800">
+		  <div class="w3-display-middle w3-margin-top w3-center">
+			<h1 class="w3-xxlarge w3-text-white">
+				<span class="w3-padding w3-black w3-opacity-min"><b>Engaged. Provide Value.</b></span> 
+				<span class="w3-hide-small w3-text-light-grey">Iterate.</span>
+			</h1>
+		  </div>
+		</header>
+		
+		<div class="w3-container w3-padding-32" id="contact">
+			<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+			<p>Lets get in touch and talk about your next project!</p>
+			<form  action= "contact-form-handler.php" method="POST" name="contactform">
+				
+						  <p>
+				<label for='name'>Your Name:</label> <br>
+				<input type="text" name="name">
+				</p>
+				<p>
+				<label for='email'>Email Address:</label> <br>
+				<input type="text" name="email"> <br>
+				</p>
+				<p>
+				<label for='subject'>Subject:</label> <br>
+				<input type="text" name="subject"> <br>
+				</p>
+				<p>
+				<label for='message'>Message:</label> <br>
+				<textarea name="message"></textarea>
+				</p>
+				
+
+			  <button class="w3-button w3-black w3-section" value="Submit" type="submit">
+				<i class="fa fa-paper-plane"></i> SEND MESSAGE
+			  </button>
+			</form>
+		</div>
+		<!--
+		<script language="JavaScript">
+			var frmvalidator  = new Validator("contactform");
+			frmvalidator.addValidation("name","req","Please provide your name");
+			frmvalidator.addValidation("Subject","req","Please provide a subject");
+			frmvalidator.addValidation("email","req","Please provide your email");
+			frmvalidator.addValidation("email","email",
+			  "Please enter a valid email address");
+			frmvalidator.addValidation("comment","req","Please leave a comment");
+		</script>
+		
+		-->
+		
+
+		
+	</body>
+</html>
+		

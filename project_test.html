@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+
+<h2 class="w3-center">Newton Houses Project</h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="image/proj2_house-1.png" style="width:100%">
+  <img class="mySlides" src="image/afterhouse-1.jpg" style="width:100%">
+</div>
+
+<p> We asked the city of Seattle for a list of vacant homes. We wanted to help eradicate the city of these dangerous eye sores while making some money.  We contacted the owner of this property and assured to him that we could help him remove the burden he carried by owning this property.<p>
+	
+</p>
+The property sits on a 13% grade slope so most developers did not want to invest a significant amount into the acquisition cost of this property.  We proposed to the owner that he deed the property over for free and he in turn receive an equity stake in the final product, in addition to recieving his original principal amount. He agreed and  this property is able to to benefit all the stake holders.</p>
+
+<p>It will soon be a <b>beautiful 4 unit townhome</b> that will generate a huge amount of profit.</p>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 6000); // Change image every 6 seconds
+}
+</script>
+
+</body>
+</html>
